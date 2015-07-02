@@ -737,10 +737,12 @@
 					"\"$(SRCROOT)/external/Chipmunk/include\"",
 					"\"$(SRCROOT)/external/Chipmunk/objectivec/include\"",
 				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -761,6 +763,7 @@
 					"\"$(SRCROOT)/external/Chipmunk/include\"",
 					"\"$(SRCROOT)/external/Chipmunk/objectivec/include\"",
 				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
